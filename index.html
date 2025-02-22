@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Million Dreams Studio</title>
+        <link rel="stylesheet" type="text/css" href="CSSWEB.css">
+    </head>
+    <body background="BG.png">
+        <header>
+            <a href="D:\Atharv\Web Project School html code\PRT1.HTML" class="logo"><img src="LOGO1-removebg-preview.png" height="25%" width="25%"></a>
+            <ul>
+                <li><a href="CONTCT WEB1.HTML" class="Contact">Contact</a></li>
+                <li><a href="MAIL US WEB.html" class="Mail Us">Mail Us</a></li>
+                <li><a href="ourgames.html" class="Games">See our Games</a></li>
+                <li><a href="OURTEAM.html" class="Community">Our Group</a></li>
+            </ul>
+        </header>
+        <section class="banner">
+            <br>
+            <h1 align="Center">the game is here!</h1>
+        </section>
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky",window.scrollY>0)
+            })
+        </script>
+        <section class="banner">
+        <font >
+            <H2 style="color: white ;">Welcome To our web!</H2><br>
+            <p>
+                we are currently working on a game and you will see it soon, you will really like it! we have currently made enough part to release but we want to ensure it befor releasing, you will surely see the information soon!
+            </p><br><br><br><br><br><br><br><br><br>
+            <h2>Here are some images:</h2>
+        </font>
+        <section class="part">
+            <!--Image Slide Close-->
+            <!--Image Slider Start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--Image Slide Start-->
+                    <input type="radio" name="IMGS" id="radio1">
+                    <input type="radio" name="IMGS" id="radio2">
+                    <input type="radio" name="IMGS" id="radio3">
+                    <input type="radio" name="IMGS" id="radio4">
+                    <input type="radio" name="IMGS" id="radio5">
+                    <input type="radio" name="IMGS" id="radio6">
+            <!--Slide IMG START-->
+            <div class="slide first">
+                <img src="1.png">
+            </div>
+            <div class="slide">
+                <img src="2.png">
+            </div>
+            <div class="slide">
+                <img src="3.png">
+            </div>
+            <div class="slide">
+                <img src="4.png">
+            </div>
+            <div class="slide">
+                <img src="5.png">
+            </div>
+            <div class="slide">
+                <img src="6.png">
+            </div>
+            <!--Slide IMG END-->
+            <!--automatic nav start-->
+            <div class="navigation-auto">
+                <div class="navbtn1"></div>
+                <div class="navbtn2"></div>
+                <div class="navbtn3"></div>
+                <div class="navbtn4"></div>
+                <div class="navbtn5"></div>
+                <div class="navbtn6"></div>
+            </div>
+            <!--automatic nav end-->
+                </div>
+                <!--manual nav start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                </div>
+                <!--manual nav end-->
+            </div>
+            <!--Image Slider Close-->
+       </section>
+        </section>
+        <section class="banner"></section>
+        <script type="text/javascript">
+           var counter = 1;
+           setInterval(function(){
+               document.getElementById('radio' + counter).checked = true;
+               counter++;
+               if(counter > 6)
+               {
+                   counter = 1;
+               }
+           },5000);
+           </script>
+</html>
